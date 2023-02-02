@@ -1,26 +1,23 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.15;
 
-interface IERC20{
-    function transfer(address to, uint amount) external;
-    function decimals() external view returns(uint);
-}
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract TokenSale{
-    uint weiTokenPrice = 1 ether;
+contract TokenSale is ERC20{
+    uint weiTokenPrice = 3 ether;
 
-    IERC20 token;
-
-    function setToken(address _token) public
+    constructor () ERC20("MyToken", "MT")
     {
-        token = IERC20(_token);
+
     }
+
+
     function purchase() public payable
     {
         require(msg.value >=weiTokenPrice, "Not enough currency");
         uint tokens = msg.value/weiTokenPrice;
         uint rem = msg.value - tokens*weiTokenPrice;
-        token.transfer(msg.sender,tokens*10**token.decimals());
+        transfer(msg.sender,tokens*10**decimals());
         payable(msg.sender).transfer(rem);
     }
 }

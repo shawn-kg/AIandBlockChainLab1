@@ -8,8 +8,8 @@ interface IERC721 {
 contract NFTDutchAuction {
     uint private constant DURATION = 10 days;
 
-    IERC721 public nft;
-    uint public nftId;
+    IERC721 public immutable nft;
+    uint public immutable nftId;
 
     address payable public immutable seller;
     uint public immutable startingPrice;
@@ -17,7 +17,7 @@ contract NFTDutchAuction {
     uint public immutable expiresAt;
     uint public immutable discountRate;
 
-    constructor(uint _startingPrice, uint _discountRate)
+    constructor(uint _startingPrice, uint _discountRate, address _nft, uint _nftId)
     {
         seller = payable(msg.sender);
         startingPrice = _startingPrice;
@@ -27,13 +27,9 @@ contract NFTDutchAuction {
 
         require(startingPrice >= discountRate*DURATION, "The starting price should be greater than the decrease of the price over the bidding period");
 
-
-    }
-
-    function setNFT(address _nft, uint _nftId) public
-    {
         nft = IERC721(_nft);
         nftId = _nftId;
+
     }
 
     function getPrice() public view returns (uint) 

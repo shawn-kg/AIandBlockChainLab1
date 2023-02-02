@@ -9,6 +9,7 @@ contract Wallet {
     mapping (address => bool) public guardians;
     address payable nxtOwner;
     uint guardianCount;
+    uint genGuardianCount;
     uint public constant GuardiansNeededToReset = 3;
 
     constructor()
@@ -67,7 +68,9 @@ contract Wallet {
     function setGuardian(address _guard) public 
     {
         require(msg.sender == owner, "You are not the owner");
+        require(genGuardianCount<=5, "Already enough guardians");
         guardians[_guard] = true;
+        genGuardianCount+=1;
     }
 
 
