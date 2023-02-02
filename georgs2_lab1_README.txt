@@ -10,13 +10,28 @@ Messenger: 0x3Fb530dE64C14D8451b3DBAB5A6Dcb3b14Cbf9bF
 
 SimpleBank: 0x144ad3E3b9eacE061108D54B7E4959dA24ab0736
 
-Wallet: 0x7106E573C3Bed9B4B77a002E3F917bc5BAfc04aC
+Wallet: 0xAFd73f602eDd603ADe7D783aAef0690BBC5aBD3B
 
-TokenSale: 0xfc9C3288d862a3BcaA33dbB03e262768ad86765D
+TokenSale: 0x7bF8f1275DE43220Cf708EA993898E5704b37c0A
 
-NFTDutchAction:0x8b192cFb8d90AcB7e1cdb909a060a855195B0007
+NFTDutchAction:0x63D1374124418673d1C3889Fc93BCb8a66658950
 
 Resources:
 https://solidity-by-example.org/app/dutch-auction/
 
+I used this link for help with the dutch auction. 
+
 https://ethereum-blockchain-developer.com/2022-02-solidity-basics-blockchain-messenger/00-overview/
+
+I used this link for help with many of the projects. 
+
+I used openzeppelin to create my own token.
+
+https://www.quicknode.com/guides/smart-contract-development/how-to-create-and-deploy-an-erc-721-nft
+
+I used this to link to help me create my NFT contract. 
+
+Assumptions:
+
+I assumed that the wallet already had currency to spend when created.
+
