@@ -16,6 +16,16 @@
 						"internalType": "uint256",
 						"name": "_discountRate",
 						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_nft",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nftId",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -107,24 +117,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_nft",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_nftId",
-						"type": "uint256"
-					}
-				],
-				"name": "setNFT",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "startAt",
 				"outputs": [
@@ -179,11 +171,11 @@
 	},
 	"sources": {
 		"georgs2NFTDutchAuction.sol": {
-			"keccak256": "0x7a7b3635dac59ea4ded59c225fc6be9513a54a1bb77c228039a636fc07bd21d5",
+			"keccak256": "0x6a797c940618514efa3d7aa06c94ef561bc236f042e6bb7d530a32bdccb8471f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bb6e486da5322499282ba93d09360fbaac084396fa0c1bdc5f1745afb417d526",
-				"dweb:/ipfs/QmZi7UAYkqUBgcqTNVjijS9gdt1vwu2PsFtHpeY23po1L1"
+				"bzz-raw://db169831070240060fd56c05a9f127d30c3d15665aab7cc0a612bb18ea5697fe",
+				"dweb:/ipfs/QmYAqNhyU7nUL3WkDV2NuH8t2NLK8zuYN4bcxYHCsnzGEr"
 			]
 		}
 	},

@@ -65,11 +65,11 @@
 	},
 	"sources": {
 		"georgs2TokenSale.sol": {
-			"keccak256": "0xdc951f515fc93a66e2f85f0e2f7e240f4384c58d295ffb881e13d59cbf715193",
+			"keccak256": "0xbca311a4fef133346c0ee87cd90e6216942cd742eefd89590789a103c98d77a7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ea3edf496e6abb0dd170ed7b4c60482e4b1dbb39442e697a8d80ffe19891b341",
-				"dweb:/ipfs/QmYCDTrDACXTH72wGwoivMsV1uSuyu4t2b9ueF3sVZQR5h"
+				"bzz-raw://a9d3e2f343558ba0912f6366344f7e6b52ea7107fed6fe22c1e225b86ca4d785",
+				"dweb:/ipfs/QmSfGy1RMiC3FCc8oRVdvYayzzfRDCnKbGo1nYrRhFGZ3v"
 			]
 		}
 	},

@@ -199,11 +199,11 @@
 	},
 	"sources": {
 		"georgs2Wallet.sol": {
-			"keccak256": "0x698477f2a1fb620209f3b331649182b2573d2a4b1937c5bf992bd4c8b9ba5d68",
+			"keccak256": "0x0da7971a32f6b066affd32dde9e215a62bacffcb08192f09a027a61de26fd549",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://23d99dcf2d33226c06e6ae6c01eac958b4bf67293a8f4d638406525333ee3551",
-				"dweb:/ipfs/QmVAZaGnGsCR8k6wc4PDBrtGJZsPmWVAzDujCRtn6EB5nw"
+				"bzz-raw://aaf46b47f073915f73930c00920f050664d04e999814259f07a5754a48379df8",
+				"dweb:/ipfs/Qmc7FEhvYNDHAZG4zrV9YUkNiZfn1Nf9bQsu65F4yeKd7s"
 			]
 		}
 	},
